@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Movimentações</title>
+    <link rel="icon" href="bells-logo.png" sizes="32x32" />
+    <link rel="icon" href="bells-logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="bells-logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="bells-logo.png" width="70" height="25" class="d-inline-block align-top" alt="">
+            Cadastro de Movimentações
+          </a>
+        </nav>
+
+        <div class="alert alert-dark" role="alert">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Buscar Produtos</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o produto para buscar">
+                </div>
+              </form>
+            </div>
+            <div class ="col-12 col-lg-8">
+              <div class="form-group">
+                <form>
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">Selecionar Produto</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Tipo de Movimento</label>
+                    <select class="form-control">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                    </select>
+                </div>
+              </form>
+            </div>
+          <div class="col-12 col-lg-4">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Tipo de Nota</label>
+                  <select class="form-control">
+                    <option>Produção</option>
+                    <option>Vendas</option>
+                    <option>Transferência</option>
+                    <option>Correção</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nota Fiscal</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Data</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Informações do Produto</label>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Código do Produto</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-4">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nome do Produto</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-1">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Quantidades</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-3">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Obs.</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Consultar Movimentações</label>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-1">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">ID</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Movimento</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-1">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Tipo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nota</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Data</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-2">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Código</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block">CADASTRAR</button>
+        </div>
+      </div>
+  </body>
+</html>

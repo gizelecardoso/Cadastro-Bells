@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produtos Bells</title>
+    <link rel="icon" href="bells-logo.png" sizes="32x32" />
+    <link rel="icon" href="bells-logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="bells-logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+          <div class="col-12 lg-6">
+              <img src="bells-logo.png" class="img-fluid" alt="Responsive image">
+          </div>
+        </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <form>
+            <div class="form-group">
+              <label for="CódigoProduto">Código do Produto</label>
+              <input type="código" class="form-control" id="CódigoProduto" aria-describedby="emailHelp" placeholder="Digite o código do produto">
+              <small id="emailHelp" class="form-text text-muted">Apenas números.</small>
+            </div>
+            <div class="form-group">
+              <label for="DescricaoProduto">Descrição do Produto</label>
+              <input type="produto" class="form-control" id="DescricaoProduto" placeholder="Digite o nome do produto">
+            </div>
+          </form>
+        </div>
+      </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <form>
+              <div class="form-group">
+                <label for="CódigoProduto">Medidas</label>
+                <input type="código" class="form-control" id="CódigoProduto" aria-describedby="emailHelp" placeholder="Digite comprimento/largura/altura">
+              </div>
+            </form>
+          </div>
+          <div class="col-4">
+            <form>
+              <div class="form-group">
+                <label for="CódigoProduto">Peso</label>
+                <input type="código" class="form-control" id="CódigoProduto" aria-describedby="emailHelp" placeholder="Digite o peso">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <form>
+              <div class="form-group">
+                <label for="CódigoProduto">Cor</label>
+                <input type="código" class="form-control" id="CódigoProduto" aria-describedby="emailHelp" placeholder="Digite a cor">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Concordo que os dados são verídicos</label>
+              </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
